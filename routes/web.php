@@ -16,7 +16,9 @@ use App\Http\Controllers\UserController;
 */
 Route::get('/', [UserController::class, 'index'])->name('index');
 Route::post('/signin', [UserController::class, 'signin'])->name('signin');
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 Route::get('/dashboard', [MatchesController::class, 'dashboard'])->name('dashboard');
 Route::get('/games', [GamesController::class, 'games'])->name('games');
 Route::post('/add', [GamesController::class, 'create'])->name('add');
+

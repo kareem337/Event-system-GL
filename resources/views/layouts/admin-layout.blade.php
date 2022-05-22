@@ -30,7 +30,7 @@
     <div class="topnav">
         <a class="active" href="/">Dashboard</a>
         <a href="/games">Games</a>
-        <a href="#logout">Logout</a>
+        <a href="/logout">Logout</a>
     </div>
         @yield('content')
   </body>

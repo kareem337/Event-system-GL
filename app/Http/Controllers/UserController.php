@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 use Illuminate\Http\Request;
 
@@ -23,5 +24,11 @@ class UserController extends Controller
         else{
             return back()->with('status', 'Incorrect login info!');
         }
+    }
+
+    public function logout(){
+        // Session::flush();
+        Auth::logout();
+        return redirect()->route('index');
     }
 }
