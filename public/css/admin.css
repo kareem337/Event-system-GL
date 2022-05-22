@@ -1,6 +1,7 @@
+@import url('constants.css');
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
   }
   
   .topnav {
@@ -24,6 +25,8 @@ body {
   }
   
   .topnav a.active {
-    background-color: #A51383;
+    background-color: var(--main-color);
     color: white;
   }
+
+  

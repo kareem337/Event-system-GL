@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MatchesController;
 use App\Http\Controllers\GamesController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +14,9 @@ use App\Http\Controllers\GamesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [UserController::class, 'index'])->name('index');
+Route::post('/signin', [UserController::class, 'signin'])->name('signin');
 
-Route::get('/', [MatchesController::class, 'index'])->name('dashboard');
-Route::get('/games', [GamesController::class, 'index'])->name('games');
+Route::get('/dashboard', [MatchesController::class, 'dashboard'])->name('dashboard');
+Route::get('/games', [GamesController::class, 'games'])->name('games');
 Route::post('/add', [GamesController::class, 'create'])->name('add');

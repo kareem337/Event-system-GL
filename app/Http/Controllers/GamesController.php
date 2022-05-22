@@ -6,7 +6,7 @@ use Exception;
 use Illuminate\Http\Request;
 class GamesController extends Controller {
     
-    public function index(){
+    public function games(){
         return view('games');
     }
 

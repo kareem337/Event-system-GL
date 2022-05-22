@@ -6,7 +6,7 @@ use App\Models\Matches;
 
 class MatchesController extends Controller
 {
-    public function index(){
+    public function dashboard(){
         $matches = Matches::with('match_game_type')->get();
         return view('dashboard', ['matches'=>$matches]);
     }
