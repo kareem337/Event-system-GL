@@ -30,25 +30,5 @@ Dashboard
 				</tbody>
 			</table>
 		</div>
-{{-- </table> --}}
-    <script>
-        $(document).ready(function()
-        {
-            $('#schedule').DataTable( {
-                responsive: {
-                    details: {
-                        display: $.fn.dataTable.Responsive.display.modal( {
-                            header: function ( row ) {
-                                var data = row.data();
-                                return 'Details for '+data[0]+' '+data[1];
-                            }
-                        } ),
-                        renderer: $.fn.dataTable.Responsive.renderer.tableAll( {
-                            tableClass: 'table'
-                        } )
-                    }
-                }
-            } );
-        } );
-    </script>
+        <script src="{{ asset('js/dashboard-datatable.js') }}" ></script>
 @endsection
