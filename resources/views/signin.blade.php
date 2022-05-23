@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Signin</title>
+  <title>RANK UP | Signin</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/signin.css') }}">
 </head>
@@ -18,18 +18,18 @@
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           <form action="/signin" method="POST">
-            <label class="form-label" for="form3Example3">Email</label>
+            <label class="form-label" for="email">Email</label>
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form3Example3" name="email" class="form-control form-control-lg"
-                placeholder="Enter a valid email address" /required>
+              <input type="email"  name="email" class="form-control form-control-lg"
+                placeholder="Enter an email" /required>
               
             </div>
             
-            <label class="form-label" for="form3Example4">Password</label>
+            <label class="form-label" for="password">Password</label>
             <!-- Password input -->
             <div class="form-outline mb-3">
-              <input type="password" id="form3Example4" name="password" class="form-control form-control-lg"
+              <input type="password" name="password" class="form-control form-control-lg"
                 placeholder="Enter password" /required>
               
             </div>
@@ -37,8 +37,8 @@
             <div class="d-flex justify-content-between align-items-center">
               <!-- Checkbox -->
               <div class="form-check mb-0">
-                <input class="form-check-input me-2" name="remember_me" type="checkbox" value="" id="form2Example3" />
-                <label class="form-check-label" for="form2Example3">
+                <input class="form-check-input me-2" name="remember_me" type="checkbox" value="" id="remember_me" />
+                <label class="form-check-label" for="remember_me">
                   Remember me
                 </label>
               </div>

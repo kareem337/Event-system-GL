@@ -21,4 +21,5 @@ Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 Route::get('/dashboard', [MatchesController::class, 'dashboard'])->name('dashboard');
 Route::get('/games', [GamesController::class, 'games'])->name('games');
 Route::post('/add', [GamesController::class, 'create'])->name('add');
+Route::get('/matches', [MatchesController::class, 'from_today_matches'])->name('matches');
 
