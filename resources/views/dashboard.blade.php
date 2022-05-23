@@ -29,9 +29,7 @@ Dashboard
 				</tbody>
 			</table>
 		</div>
-		<footer style="position: absolute; bottom:0px; width: 100%;">
 		@include('layouts.footer')
-		</footer>
         <script src="{{ asset('js/dashboard-datatable.js') }}" ></script>
 @endsection
 
