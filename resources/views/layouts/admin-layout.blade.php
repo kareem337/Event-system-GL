@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>RANK UP | @yield('title')</title>
+    <title>RANK UP P. 2 | @yield('title')</title>
     
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -28,10 +28,11 @@
  </head>
   <body>
     <div class="topnav">
-        <a class="active" href="/dashboard">Dashboard</a>
-        <a href="/games">Games</a>
-        <a href="/matches">Matches</a>
+      <img class="logo" src = "{{ asset('img/RANK UP Logo.svg') }}" alt="My Happy SVG"/>
         <div class="topnav-right">
+          <a class="active" href="/dashboard">Dashboard</a>
+          <a href="/games">Games</a>
+          <a href="/matches">Matches</a>
           <a href="/logout">Logout</a>
         </div>  
     </div>

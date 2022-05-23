@@ -35,4 +35,7 @@ Games
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+<footer style="position: absolute; bottom:0px; width: 100%;">
+  @include('layouts.footer')
+  </footer>
 @endsection

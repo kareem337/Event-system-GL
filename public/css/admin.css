@@ -32,6 +32,12 @@ body {
   .topnav-right {
     float: right;
   }
+
+  .topnav .logo {
+    width: 10%;
+    height:auto;
+    margin-left: 1%;
+  }
   
 
   
