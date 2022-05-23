@@ -5,8 +5,8 @@ Dashboard
 @section('content') 
 <br><br>
 {{-- <table> --}}
-		<div class="container-fluid">
-			<table id="schedule" class="table table-striped table-bordered nowrap" style="width:100%">
+		<div class="container-fluid" >
+			<table id="schedule" class="table table-striped table-dark table-bordered nowrap" style="width:100%">
 				<thead>
 					<tr>
 						<th>ID</th>
@@ -29,5 +29,9 @@ Dashboard
 				</tbody>
 			</table>
 		</div>
+		<footer style="position: absolute; bottom:0px; width: 100%;">
+		@include('layouts.footer')
+		</footer>
         <script src="{{ asset('js/dashboard-datatable.js') }}" ></script>
 @endsection
+
