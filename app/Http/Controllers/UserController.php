@@ -19,7 +19,7 @@ class UserController extends Controller
 
         if (Auth::attempt($credentials, $remember_me)) {
             // $request->session()->regenerate();
-            return redirect()->route('dashboard')->with("status", "You're logged in!"); //Redirect the user to the page intended to go to, with the dashboard page as default
+            return redirect()->route('dashboard'); //Redirect the user to the page intended to go to, with the dashboard page as default
         }
         else{
             return back()->with('status', 'Incorrect login info!');

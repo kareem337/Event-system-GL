@@ -28,9 +28,12 @@
  </head>
   <body>
     <div class="topnav">
-        <a class="active" href="/">Dashboard</a>
+        <a class="active" href="/dashboard">Dashboard</a>
         <a href="/games">Games</a>
-        <a href="/logout">Logout</a>
+        <a href="/matches">Matches</a>
+        <div class="topnav-right">
+          <a href="/logout">Logout</a>
+        </div>  
     </div>
         @yield('content')
   </body>
