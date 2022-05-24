@@ -25,8 +25,8 @@ Dashboard
 			@foreach($matches as $match)
 			<tr>
 			<td>{{$match->id}}</td>
-			<td>{{$match->player1}}</td>
-			<td>{{$match->player2}}</td>
+			<td>{{$match->player_one->name}}</td>
+			<td>{{$match->player_two->name}}</td>
 			<td>{{$match->match_game_type->game}}</td>  
 			<td>{{$match->datetime}}</td>
 			</tr>

@@ -20,8 +20,9 @@ Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 Route::get('/dashboard', [MatchesController::class, 'dashboard'])->name('dashboard');
 Route::get('/games', [GamesController::class, 'games'])->name('games');
-Route::post('/add', [GamesController::class, 'create'])->name('add');
+Route::post('/add_game', [GamesController::class, 'create'])->name('add_game');
 Route::get('/matches', [MatchesController::class, 'from_today_matches'])->name('matches');
 Route::get('/matches/start/{id}', [MatchesController::class, 'start_match'])->name('start_match');
-Route::get('/matches/end/{id}', [MatchesController::class, 'end_match'])->name('end_match');
+Route::get('/matches/score/{id}', [MatchesController::class, 'end_match'])->name('end_match');
 
+// Route::get('match/score', [MatchesController::class, 'score'])->name('score');

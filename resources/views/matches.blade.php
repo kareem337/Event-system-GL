@@ -27,27 +27,27 @@ Matches
 								<th>Game</th>
 								<th>Time (H-M-S)</th>
 								<th>Status</th>
-								<th>Links</th>
+								<th>Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 				@foreach($matches as $match)
 				<tr>
 				<td>{{$match->id}}</td>
-				<td>{{$match->player1}}</td>
-				<td>{{$match->player2}}</td>
+				<td>{{$match->player_one->name}}</td>
+				<td>{{$match->player_two->name}}</td>
 				<td>{{$match->match_game_type->game}}</td> 
 				{{-- extract time from datetime field  --}}
 				<td>{{Carbon\Carbon::parse($match->datetime)->format('H:i:s')}}</td>
 
 				@if($match->status == '1')
 					<td>Started</td> 
-				@elseif ($match->status == '0')
+				@elseif($match->status == '0')
 					<td>Ended</td> 
 				@endif
 				
 				<td> <a href="/matches/start/{{$match->id}}" class="btn btn-primary btn-sm rounded-0"  data-toggle="tooltip" data-placement="top" title="Start"><i class="fa fa-play"></i></a>
-				</li><a href="/matches/end/{{$match->id}}"class="btn btn-danger btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Stop"><i class="fa fa-stop"></i></a>
+				</li><a href="/matches/score/{{$match->id}}"class="btn btn-danger btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Stop"><i class="fa fa-stop"></i></a>
 				</li></td>
 				</tr>
 				@endforeach

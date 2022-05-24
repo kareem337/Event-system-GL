@@ -34,6 +34,7 @@ class CreateMatchesTable extends Migration
         Schema::table('posts', function (Blueprint $table) {
             $table->dropConstrainedForeignId('game_id');
             $table->dropColumn('game_id');
+            
         });
     }
 }

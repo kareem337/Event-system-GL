@@ -1,6 +1,6 @@
 @extends('layouts.admin-layout')
 @section('title')
-Games
+Score
 @endsection
 @section('content')
 <br><br>
@@ -18,19 +18,15 @@ Games
     </div>
     @endif
 
-  <form action="add_game" method="POST">
+  <form action="add_score" method="POST">
   @csrf
     <div class="form-group">
-      <label for="game">Game</label>
-      <input type="text" class="form-control" id="game" name="game" placeholder="Enter the game">
+      <label for="p1">Player 1</label>
+      <input type="text" class="form-control" id="p1_score" name="p1_score" placeholder="Enter player one score">
     </div>
     <div class="form-group">
-      <label for="time">Date-Time</label>
-      <input type="datetime-local" class="form-control" id="time" name="datetime" placeholder="Enter the time">
-    </div>
-    <div class="form-group">
-      <label for="slot">Slot</label>
-      <input type="number" class="form-control" id="slot" name="slot" placeholder="Enter the slot">
+        <label for="p2">Player 2</label>
+        <input type="text" class="form-control" id="p2_score" name="p2_score" placeholder="Enter player two score">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
