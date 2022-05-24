@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MatchesController;
 use App\Http\Controllers\GamesController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PlayersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +24,5 @@ Route::get('/games', [GamesController::class, 'games'])->name('games');
 Route::post('/add_game', [GamesController::class, 'create'])->name('add_game');
 Route::get('/matches', [MatchesController::class, 'from_today_matches'])->name('matches');
 Route::get('/matches/start/{id}', [MatchesController::class, 'start_match'])->name('start_match');
-Route::get('/matches/score/{id}', [MatchesController::class, 'end_match'])->name('end_match');
-
-// Route::get('match/score', [MatchesController::class, 'score'])->name('score');
+Route::get('/matches/score/{id}{p1_id}{p2_id}', [MatchesController::class, 'end_match'])->name('end_match');
+Route::post('/matches/score/add_score', [PlayersController::class, 'edit_score'])->name('add_score');

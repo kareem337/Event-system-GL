@@ -47,7 +47,7 @@ Matches
 				@endif
 				
 				<td> <a href="/matches/start/{{$match->id}}" class="btn btn-primary btn-sm rounded-0"  data-toggle="tooltip" data-placement="top" title="Start"><i class="fa fa-play"></i></a>
-				</li><a href="/matches/score/{{$match->id}}"class="btn btn-danger btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Stop"><i class="fa fa-stop"></i></a>
+				</li><a href="/matches/score/{{$match->id}}{{$match->player1}}{{$match->player2}}"class="btn btn-danger btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Stop"><i class="fa fa-stop"></i></a>
 				</li></td>
 				</tr>
 				@endforeach

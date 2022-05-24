@@ -26,7 +26,8 @@ class MatchesController extends Controller
     }
 
     # update the value of status field to 0 to end the match 
-    public function end_match($id){
+    public function end_match($id, $p1_id, $p2_id){
+        session(['p1_id' => $p1_id, 'p2_id' => $p2_id]);
         $match = Matches::findOrFail($id);
         $match->status = 0;
         $match->save();
