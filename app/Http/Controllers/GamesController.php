@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Game;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 class GamesController extends Controller {
     
     public function games(){
@@ -27,7 +28,10 @@ class GamesController extends Controller {
 		}catch(Exception $e){
 			return redirect()->back()->with('failure',"Error in insertion");
 		}
-		
     }
-    
+
+	public function codes_view(){
+        $games = Game::all();
+        return view('scan', ['games' => $games]);
+    }
 }

@@ -28,11 +28,12 @@
  </head>
   <body>
     <div class="topnav">
-      <img class="logo" src = "{{ asset('img/RANK UP Logo.svg') }}" alt="My Happy SVG"/>
+      <img class="logo" src = "{{ asset('img/RANK UP Logo.svg') }}" alt="LOGO SVG"/>
         <div class="topnav-right">
           <a class="active" href="/dashboard">Dashboard</a>
           <a href="/games">Games</a>
           <a href="/matches">Matches</a>
+          <a href="/codes">Codes</a>
           <a href="/logout">Logout</a>
         </div>  
     </div>

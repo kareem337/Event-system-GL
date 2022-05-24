@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Players;
+use App\Models\Game;
 use Illuminate\Http\Request;
 
 class PlayersController extends Controller
@@ -17,4 +18,5 @@ class PlayersController extends Controller
         $p2->save();
         return redirect('/matches')->with('status',"Match Ended");
     }
+
 }
