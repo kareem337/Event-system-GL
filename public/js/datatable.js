@@ -15,4 +15,13 @@ $(document).ready(function()
             }
         }
     });
+    setTimeout(function(){
+        $("#response_message").remove();
+    }, 5000 );
 });
+
+// update the content of the webpage each 15 min.
+// setTimeout(function(){
+//     window.location.reload(1);
+//  }, 150000);
+

@@ -17,5 +17,21 @@ class MatchesController extends Controller
         $matches = Matches::whereDate('datetime', '=', now()->toDateString())->get();
         return view('matches', ['matches'=>$matches]);
     }
+
+    # update the value of status field to 1 to start the match
+    public function start_match($id){
+        $match = Matches::findOrFail($id);
+        $match->status = 1;
+        $match->save();
+        return redirect()->back()->with('status',"Match started");
+    }
+
+    # update the value of status field to 0 to end the match 
+    public function end_match($id){
+        $match = Matches::findOrFail($id);
+        $match->status = 0;
+        $match->save();
+        return redirect()->back()->with('status',"Match ended");
+    }
 }
 ?>
