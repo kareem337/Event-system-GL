@@ -1,0 +1,136 @@
+@font-face {
+    font-family: myfont;
+    src: url(fonts/Sequel100Black-45.ttf);
+}
+body {
+    background-color: black;
+    margin: 0;
+    font-family: myfont;
+}
+.nav1 {
+    background-color: transparent;
+    height: 130px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+}
+
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 0;
+    font-weight: 800;
+    border-radius: 10px;
+    font-family: myfont;
+}
+
+.button1 {
+    background-color: white;
+}
+
+.button2 {
+    background-color: black;
+    color: white;
+}
+
+.time {
+    background-color: #6633FF;
+    height: 180px;
+    width: 100%;
+}
+
+.time .button3
+{
+    background-color: black;
+    color: white;
+    margin-left: 80%;
+    position: relative;
+}
+
+.players
+{
+    margin-left: 40%;
+    color: white;
+    position:relative;
+     top:150px;
+}
+
+.mbappe
+{
+    position: absolute;
+     margin-left: 150px;
+     top:1350px;
+}
+
+.button4
+{
+    position: absolute;
+    width: 80%;
+    margin-left: 150px;
+    background-color: #FFD100;
+    top:1600px;
+}
+
+.sponsors
+{
+    position: absolute;
+    color: white;
+    margin-left: 430px;
+    top:1670px;     
+}
+
+.logo1
+{
+    position: absolute;
+    top:1800px;
+   margin-left: 90px;
+}
+
+.logo2
+{
+    position: absolute;
+    top:1800px;
+    margin-left: 500px;
+}
+
+.logo3
+{
+    position: absolute;
+    top:1800px;
+    margin-left: 1000px;
+}
+
+.yellow
+{
+    position: relative;
+    top:650px;
+    background-color: #FFD100;
+    height: 100 px;
+}
+
+.white
+{
+    background-color: white;
+    position: relative;
+    top:627px;
+}
+
+
+
+.purple
+{
+    background-color: #6633FF;
+    position: relative;
+    top:605px;
+    height: 100%;
+}

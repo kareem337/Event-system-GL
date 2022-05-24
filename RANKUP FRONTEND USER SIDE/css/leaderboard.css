@@ -1,0 +1,68 @@
+@font-face {
+    font-family: myfont ;
+    src: url(fonts/Sequel100Black-45.ttf);
+}
+body {
+    background-color: black;
+    margin: 0;
+    font-family: myfont;
+}
+
+.nav1 {
+  background-color: #6633FF;
+  height: 130px;
+}
+.nav {
+    position:absolute;
+     top:0;
+    right:0;
+    padding: 40px;
+}
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  left: 0;
+  font-weight:800;
+ border-radius: 10px;
+}
+.button1
+{
+    background-color: white;
+}
+
+.button2
+{
+    background-color: black;
+    color: white;
+}
+.button3
+{
+    background-color:  #6633FF;
+    color: white;
+}
+
+.leaderboard
+{
+    padding: 40px;
+    
+}
+
+.gender
+{
+    background-color: black;
+    color: wheat;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.gender:hover
+{
+    background-color:  #6633FF;
+}
+
