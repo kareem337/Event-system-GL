@@ -1,0 +1,107 @@
+@font-face {
+    font-family: myfont ;
+    src: url(fonts/Sequel100Black-45.ttf);
+}
+body {
+    background-color: black;
+    margin: 0;
+    font-family:myfont;
+}
+
+.nav1 {
+    background-color: #6633FF;
+    height: 130px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+}
+
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 0;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: white;
+}
+
+.button2 {
+    background-color: black;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    top: 190px;
+    left: 430px;
+    color: black;
+}
+
+input[type=text],
+select {
+    position: absolute;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #6633FF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    top: 290px;
+    left: 240px;
+    width: 800px;
+    height: 70px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #6633FF;
+}
+
+::placeholder {
+    color: #6633FF;
+    opacity: 0.7;
+    font-weight: 800;
+}
+
+.continue {
+    position: absolute;
+    top: 390px;
+    left: 480px;
+    background-color: #6633FF;
+    color: white;
+    width: 300px;
+    border-radius: 0;
+    height: 60px;
+}
+
+.create {
+    position: absolute;
+    top: 490px;
+    left: 330px;
+    font-weight: 800;
+}
+
+.container a {
+    text-decoration: none;
+  }
+
+  .nav1 a {
+    text-decoration: none;
+  }
+  ::placeholder {
+    color: lightblue;
+    opacity: 0.7;
+    font-weight: 800;
+    font-family: myfont;
+}

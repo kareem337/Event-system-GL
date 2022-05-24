@@ -1,0 +1,177 @@
+@font-face {
+    font-family: myfont ;
+    src: url(fonts/Sequel100Black-45.ttf);
+}
+
+@font-face {
+    font-family: myfont2 ;
+    src: url(fonts/Sequel100Black-86.ttf);
+}
+body {
+    background-color: black;
+    margin: 0;
+    font-family: myfont;
+}
+
+.nav1 {
+    background-color: #6633FF;
+    height: 130px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+}
+
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 0;
+    font-weight: 800;
+    border-radius: 10px;
+    font-family: myfont;
+}
+
+.button1 {
+    background-color: white;
+}
+
+.button2 {
+    background-color: black;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    top: 190px;
+    left: 355px;
+    color: black;
+    font-family:myfont ;
+}
+input[type=number],
+select {
+    position: absolute;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    top: 290px;
+    left: 240px;
+    width: 800px;
+    height: 70px;
+}
+
+input[type=number]:focus {
+    border: 3px solid #6633FF;
+}
+input[type=email],
+select {
+    position: absolute;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    top: 290px;
+    left: 240px;
+    width: 800px;
+    height: 70px;
+}
+
+input[type=email]:focus {
+    border: 3px solid #6633FF;
+}
+input[type=text],
+select {
+    position: absolute;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    top: 290px;
+    left: 240px;
+    width: 800px;
+    height: 70px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #6633FF;
+}
+
+::placeholder {
+    color: lightblue;
+    opacity: 0.7;
+    font-weight: 800;
+}
+
+.continue {
+    position: absolute;
+    top: 830px;
+    left: 480px;
+    background-color: #6633FF;
+    width: 300px;
+    border-radius: 0;
+    color: white;
+    height: 60px;
+    background-color: lightblue;
+}
+
+.create {
+    position: absolute;
+    top: 900px;
+    left: 350px;
+    font-weight: 800;
+}
+
+.ID {
+    margin-top: 90px;
+}
+
+.Email {
+    margin-top: 180px;
+}
+
+.Phone {
+    margin-top: 270px;
+}
+
+.Gender {
+    margin-top: 360px;
+}
+
+.Checkbox {
+    position: absolute;
+
+    top: 312px;
+    left: 245px;
+    height: 20px;
+    width: 20px;
+    z-index: 2;
+    margin-top: 450px;
+}
+
+#CheckLabel {
+    position: absolute;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    top: 290px;
+    left: 240px;
+    width: 800px;
+    height: 70px;
+    color: #6633FF;
+
+    margin-top: 450px;
+}
