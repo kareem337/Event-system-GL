@@ -6,8 +6,9 @@ use App\Http\Controllers\GamesController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PlayersController;
 use App\Http\Controllers\DevicesController;
-
 use App\Http\Controllers\AvailableTimesController;
+
+use App\Http\Controllers\ScanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,7 +25,7 @@ Route::get('/codes', [GamesController::class, 'codes_view'])->name('codes_view')
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 
-// Route::post('/scan_submit', [UserController::class, 'signin'])->name('scan_submit');
+Route::post('/scan_submit', [ScanController::class, 'match_scan'])->name('scan_submit');
 
 Route::get('/dashboard', [MatchesController::class, 'dashboard'])->name('dashboard');
 Route::get('/games', [GamesController::class, 'games'])->name('games');

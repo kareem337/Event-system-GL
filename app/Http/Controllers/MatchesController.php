@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Matches;
+use GuzzleHttp\Psr7\Request;
 
 class MatchesController extends Controller
 {
@@ -33,6 +34,7 @@ class MatchesController extends Controller
         $match->save();
         return view('score');
     }
+
 
 
 }

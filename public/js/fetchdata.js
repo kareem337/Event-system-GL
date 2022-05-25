@@ -20,7 +20,7 @@ $(document).ready(function(){
            }
 
            if(len > 0){
-             // Read data and create <option >
+             // Read data and create <option>
              for(var i=0; i<len; i++){
 
                var id = response['data'][i].id;
@@ -57,11 +57,9 @@ $(document).ready(function(){
             if(len > 0){
               // Read data and create <option >
               for(var i=0; i<len; i++){
- 
-                var id = response['data'][i].id;
                 var time= response['data'][i].time;
  
-                var option = "<option value='"+id+"'>"+time+"</option>"; 
+                var option = "<option value='"+time+"'>"+time+"</option>"; 
  
                 $("#time").append(option); 
               }
